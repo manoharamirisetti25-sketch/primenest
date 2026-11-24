@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeNest | Find Your Dream Property</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#"><span class="logo-mark">P</span> PrimeNest</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-btn" href="#contact">List Your Property</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FIND A PLACE TO CALL HOME</p>
+        <h1>Discover a home<br>that feels <em>like you.</em></h1>
+        <p class="hero-copy">Explore handpicked homes, apartments, and spaces in the locations you love.</p>
+        <a class="primary-btn" href="#properties">Explore Properties <span>→</span></a>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1600595193733-1b4d6a7a3f8d?auto=format&fit=crop&w=1400&q=85" alt="Modern luxury home">
+        <div class="photo-note"><strong>Find your next chapter</strong><span>Beautiful spaces. Better living.</span></div>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,200+</strong><span>Properties listed</span></div>
+        <div><strong>850+</strong><span>Happy customers</span></div>
+        <div><strong>25+</strong><span>Locations covered</span></div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Property search">
+      <div class="search-field"><label for="location">Location</label><input id="location" type="text" placeholder="City or neighbourhood"></div>
+      <div class="search-field"><label for="type">Property type</label><select id="type"><option value="all">Any property</option><option>Apartment</option><option>Villa</option><option>House</option></select></div>
+      <div class="search-field"><label for="budget">Max budget</label><select id="budget"><option value="all">Any budget</option><option value="5000000">Under ₹50 lakh</option><option value="10000000">Under ₹1 crore</option><option value="20000000">Under ₹2 crore</option></select></div>
+      <button class="search-btn" id="searchBtn">Search Homes</button>
+    </section>
+
+    <section class="properties section-wrap" id="properties">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured properties</h2></div>
+        <p>Thoughtfully selected spaces for every kind of dream.</p>
+      </div>
+      <div class="property-grid" id="propertyGrid">
+        <article class="property-card" data-location="hyderabad gachibowli" data-type="Apartment" data-price="8500000">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Contemporary apartment exterior"><span class="tag">For Sale</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="price-row"><h3>₹85 lakh</h3><span>Apartment</span></div><h4>Skyline Residency</h4><p class="location">⌖ Gachibowli, Hyderabad</p><div class="features"><span>🛏 3 Beds</span><span>🛁 2 Baths</span><span>▧ 1,650 sq.ft</span></div><p class="amenities">Pool · Gym · Parking · Security</p><a class="contact-link" href="#contact">View Details <span>↗</span></a></div>
+        </article>
+        <article class="property-card" data-location="vijayawada benz circle" data-type="Villa" data-price="14500000">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern villa with landscaped garden"><span class="tag">Featured</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="price-row"><h3>₹1.45 crore</h3><span>Villa</span></div><h4>Greenwood Villa</h4><p class="location">⌖ Benz Circle, Vijayawada</p><div class="features"><span>🛏 4 Beds</span><span>🛁 3 Baths</span><span>▧ 2,400 sq.ft</span></div><p class="amenities">Garden · Modular Kitchen · Parking</p><a class="contact-link" href="#contact">View Details <span>↗</span></a></div>
+        </article>
+        <article class="property-card" data-location="bengaluru whitefield" data-type="Apartment" data-price="6200000">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Bright modern apartment interior"><span class="tag">New</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="price-row"><h3>₹62 lakh</h3><span>Apartment</span></div><h4>Olive Heights</h4><p class="location">⌖ Whitefield, Bengaluru</p><div class="features"><span>🛏 2 Beds</span><span>🛁 2 Baths</span><span>▧ 1,200 sq.ft</span></div><p class="amenities">Clubhouse · Gym · Balcony · Lift</p><a class="contact-link" href="#contact">View Details <span>↗</span></a></div>
+        </article>
+        <article class="property-card" data-location="hyderabad kondapur" data-type="House" data-price="9800000">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=85" alt="Spacious family house"><span class="tag">For Sale</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="price-row"><h3>₹98 lakh</h3><span>House</span></div><h4>Maple Family Home</h4><p class="location">⌖ Kondapur, Hyderabad</p><div class="features"><span>🛏 3 Beds</span><span>🛁 3 Baths</span><span>▧ 1,900 sq.ft</span></div><p class="amenities">Terrace · Garden · Car Parking</p><a class="contact-link" href="#contact">View Details <span>↗</span></a></div>
+        </article>
+        <article class="property-card" data-location="vijayawada poranki" data-type="Apartment" data-price="4800000">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Apartment living room"><span class="tag">Great Value</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="price-row"><h3>₹48 lakh</h3><span>Apartment</span></div><h4>Riverstone Apartments</h4><p class="location">⌖ Poranki, Vijayawada</p><div class="features"><span>🛏 2 Beds</span><span>🛁 2 Baths</span><span>▧ 1,050 sq.ft</span></div><p class="amenities">Lift · Power Backup · Security</p><a class="contact-link" href="#contact">View Details <span>↗</span></a></div>
+        </article>
+        <article class="property-card" data-location="chennai ecr" data-type="Villa" data-price="18500000">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Luxury villa exterior"><span class="tag">Premium</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="price-row"><h3>₹1.85 crore</h3><span>Villa</span></div><h4>Coastal Breeze Villa</h4><p class="location">⌖ ECR, Chennai</p><div class="features"><span>🛏 4 Beds</span><span>🛁 4 Baths</span><span>▧ 2,800 sq.ft</span></div><p class="amenities">Private Garden · Deck · Pool</p><a class="contact-link" href="#contact">View Details <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No matching properties found. Try changing your search.</p>
+    </section>
+
+    <section class="why-section" id="about">
+      <div class="section-wrap why-content">
+        <div><p class="eyebrow">THE PRIMENEST DIFFERENCE</p><h2>A smoother way<br>to find your place.</h2></div>
+        <div class="why-items"><div><span>01</span><div><h3>Verified listings</h3><p>Explore carefully reviewed property details and photos.</p></div></div><div><span>02</span><div><h3>Local expertise</h3><p>Discover neighbourhoods and homes that fit your needs.</p></div></div><div><span>03</span><div><h3>Personal support</h3><p>Connect with our team to take the next step with confidence.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-copy"><p class="eyebrow">LET'S FIND YOUR PLACE</p><h2>Your dream home<br>is one conversation away.</h2><p>Tell us what you're looking for. Our property team will get in touch.</p><div class="contact-detail"><span>✉</span> hello@primenest.example</div><div class="contact-detail"><span>☎</span> +91 90000 12345</div></div>
+      <form id="contactForm" class="contact-form"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required><label for="interest">I'm interested in</label><select id="interest" name="interest"><option>Buying a property</option><option>Renting a property</option><option>Listing my property</option><option>General enquiry</option></select><label for="message">Message</label><textarea id="message" name="message" rows="3" placeholder="Tell us about your ideal property"></textarea><button class="primary-btn" type="submit">Send Enquiry <span>→</span></button><p class="form-note" id="formNote">Demo form — no information is sent or stored.</p></form>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#"><span class="logo-mark">P</span> PrimeNest</a><p>Find a place. Build a life.</p><span>© 2026 PrimeNest. Demo website.</span></footer>
+  <script>
+    const cards = [...document.querySelectorAll('.property-card')];
+    document.getElementById('searchBtn').addEventListener('click', () => {
+      const location = document.getElementById('location').value.trim().toLowerCase();
+      const type = document.getElementById('type').value;
+      const budget = document.getElementById('budget').value;
+      let visible = 0;
+      cards.forEach(card => {
+        const match = (!location || card.dataset.location.includes(location)) &&
+          (type === 'all' || card.dataset.type === type) &&
+          (budget === 'all' || Number(card.dataset.price) <= Number(budget));
+        card.hidden = !match;
+        if (match) visible++;
+      });
+      document.getElementById('noResults').hidden = visible !== 0;
+    });
+    document.querySelectorAll('.heart').forEach(button => button.addEventListener('click', () => {
+      button.classList.toggle('saved');
+      button.textContent = button.classList.contains('saved') ? '♥' : '♡';
+    }));
+    document.getElementById('contactForm').addEventListener('submit', event => {
+      event.preventDefault();
+      document.getElementById('formNote').textContent = 'Thanks! This is a demo form, so your enquiry was not sent.';
+      event.target.reset();
+    });
+  </script>
+</body>
+</html>
